@@ -102,6 +102,61 @@ body {
   font-family: "Josefin Sans";
 }
 
+/******************* FLOATING PIC STUFF **********************/
+.floating-pics {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  /* background-image: url("https://i.natgeofe.com/n/11e30e6f-6fd8-4755-9647-0df41738713a/92565_3x2.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+  width: 190px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.floating-pics img {
+  width: 190px;
+  height: 120px;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+
+  animation-name: fadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  animation-direction: alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.floating-pics img:nth-of-type(1) {
+  animation-delay: 16s;
+}
+.floating-pics img:nth-of-type(2) {
+  animation-delay: 12s;
+}
+.floating-pics img:nth-of-type(3) {
+  animation-delay: 12s;
+}
+
+/******************* ^FLOATING PIC STUFF^ **********************/
+
 .about-container {
   display: flex;
   flex-direction: column;
