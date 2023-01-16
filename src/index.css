@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
+/*********** BIG APPLE ************/
+. {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   margin: 30px;
@@ -21,25 +26,39 @@ body {
   color: white;
 }
 
+/*********** HERO ************/
 .hero-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  min-height: 700px;
 }
 
 .greeting {
+  margin-left: -10px;
   font-size: 32pt;
   font-family: "Josefin Sans";
 }
 
+.location {
+  margin-top: 10px;
+
+  font-family: "Josefin Sans";
+}
+
 .star {
+  margin-left: 50px;
   font-size: 64pt;
   font-family: "Bebas Neue";
 }
 
-#type-writer {
+.typewriter {
+  margin-left: 50px;
+}
+
+#type {
   color: rgb(92, 120, 92);
 }
 
@@ -47,4 +66,63 @@ body {
   border-radius: 150px;
   width: 300px;
   height: 300px;
+  padding: 3px;
+  background-color: white;
+}
+
+#linkedin {
+  width: 70px;
+  height: 70px;
+}
+
+#github {
+  background-color: rgb(196, 190, 190);
+  border-radius: 10px;
+  width: 170px;
+  height: 70px;
+}
+
+.social {
+  margin: 10px;
+}
+
+/*********** ABOUT ME ************/
+
+.aboutHR {
+  margin: 30px;
+}
+
+.header-about {
+  text-align: center;
+  font-size: 32pt;
+}
+
+#me {
+  color: rgb(92, 120, 92);
+  font-family: "Josefin Sans";
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  min-height: 800px;
+}
+
+.about-paragraph {
+  margin: 10px;
+  padding: 20px;
+  border: white 1pt solid;
+  font-size: 16pt;
+}
+
+.skills {
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+
+.skillheader {
+  text-align: center;
+  padding: 10px;
 }
