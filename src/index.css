@@ -1,6 +1,6 @@
 /*********** FONTS ************/
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 /*********** BIG APPLE ************/
 . {
@@ -26,6 +26,14 @@ body {
   color: white;
 }
 
+.navbar {
+  padding: 10px;
+  background-color: rgb(193, 122, 134);
+  position: sticky;
+  top: 0;
+  opacity: 50%;
+}
+
 /*********** HERO ************/
 .hero-container {
   display: flex;
@@ -39,19 +47,19 @@ body {
 .greeting {
   margin-left: -10px;
   font-size: 32pt;
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
 }
 
 .location {
   margin-top: 10px;
 
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
 }
 
 .star {
   margin-left: 50px;
   font-size: 64pt;
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
 }
 
 .typewriter {
@@ -99,7 +107,7 @@ body {
 
 #me {
   color: rgb(92, 120, 92);
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
 }
 
 /******************* FLOATING PIC STUFF **********************/
@@ -173,7 +181,7 @@ body {
 }
 
 .skills {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   text-align: center;
 }
 
