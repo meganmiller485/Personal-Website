@@ -1,7 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Navbar = () => {
-  return <nav className='navbar'>Home About Projects Contact Me</nav>;
+const navLinks = [
+  { navLinkId: 'Home', scrollToId: 'hero-container' },
+  { navLinkId: 'About', scrollToId: 'about-container' },
+  { navLinkId: 'Projects', scrollToId: 'projects-container' },
+  { navLinkId: 'Contact', scrollToId: 'contact-container' },
+];
+
+const NavLink = ({
+  navLinkId,
+  scrollToId,
+  activeNavLinkId,
+  setActiveNavLinkId,
+}) => {
+  const handleClick = () => {
+    setActiveNavLinkId(navLinkId);
+    document.getElementById(scrollToId).scrollIntoView({
+      behavior: 'smooth', // gives an ease-in-out effect to our scroll
+    });
+  };
+
+  return (
+    <span
+      id={navLinkId}
+      className={activeNavLinkId === navLinkId ? 'activeClass' : ''}
+      onClick={handleClick}
+    >
+      {navLinkId}
+    </span>
+  );
 };
 
-export default Navbar;
+const NavBar = () => {
+  const [activeNavLinkId, setActiveNavLinkId] = useState('');
+
+  return (
+    <div>
+      <nav>
+        {navLinks.map(({ navLinkId, scrollToId }) => (
+          <NavLink
+            navLinkId={navLinkId}
+            scrollToId={scrollToId}
+            activeNavLinkId={activeNavLinkId}
+            setActiveNavLinkId={setActiveNavLinkId}
+          />
+        ))}
+      </nav>
+    </div>
+  );
+};
+
+export default NavBar;

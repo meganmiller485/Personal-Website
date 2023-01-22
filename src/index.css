@@ -8,8 +8,9 @@
 }
 
 body {
+  margin:0;
   background-color: black;
-  margin: 30px;
+
 }
 
 .App {
@@ -17,21 +18,20 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  border: white solid 1px;
 
   color: white;
 }
 
-.navbar {
-  padding: 10px;
-  background-color: rgb(193, 122, 134);
+nav {
+  display:flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: black;
   position: sticky;
   top: 0;
-  opacity: 50%;
+  cursor: pointer;
 }
 
 /*********** HERO ************/
@@ -39,31 +39,26 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-  min-height: 700px;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 6rem;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .greeting {
-  margin-left: -10px;
   font-size: 32pt;
   font-family: 'Josefin Sans';
 }
 
-.location {
-  margin-top: 10px;
-
-  font-family: 'Josefin Sans';
-}
-
-.star {
-  margin-left: 50px;
+.star { 
   font-size: 64pt;
   font-family: 'Bebas Neue';
 }
 
 .typewriter {
-  margin-left: 50px;
+  margin-left: 4rem;
 }
 
 #type {
@@ -71,33 +66,37 @@ body {
 }
 
 #idpic {
-  border-radius: 150px;
-  width: 300px;
-  height: 300px;
-  padding: 3px;
+  border-radius: 50rem;
+  width: 19rem;
+  height: 19rem;
+  padding: .25rem;
   background-color: white;
 }
 
 #linkedin {
-  width: 70px;
-  height: 70px;
+  width: 2rem;
+  height: 2rem;
 }
 
 #github {
   background-color: rgb(196, 190, 190);
-  border-radius: 10px;
-  width: 170px;
-  height: 70px;
+  border-radius: .2rem;
+  width: 4.86rem;
+  height: 2rem;
 }
 
 .social {
-  margin: 10px;
+  margin: 1rem;
+}
+
+.main-foot {
+  text-align: center;
 }
 
 /*********** ABOUT ME ************/
 
 .aboutHR {
-  margin: 30px;
+  margin: 3rem;
 }
 
 .header-about {
@@ -110,65 +109,17 @@ body {
   font-family: 'Josefin Sans';
 }
 
-/******************* FLOATING PIC STUFF **********************/
-.floating-pics {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-around;
-
-  /* background-image: url("https://i.natgeofe.com/n/11e30e6f-6fd8-4755-9647-0df41738713a/92565_3x2.jpg"); */
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  position: relative;
-  width: 190px;
-  height: 120px;
-  margin: 0 auto;
+.about-pic-container{
+  display:flex;
+  justify-content: center
 }
 
-.floating-pics img {
-  width: 190px;
-  height: 120px;
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-
-  animation-name: fadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 9s;
-  animation-direction: alternate;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.floating-pics img:nth-of-type(1) {
-  animation-delay: 16s;
-}
-.floating-pics img:nth-of-type(2) {
-  animation-delay: 12s;
-}
-.floating-pics img:nth-of-type(3) {
-  animation-delay: 12s;
-}
-
-/******************* ^FLOATING PIC STUFF^ **********************/
 
 .about-container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 1rem;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1200px-Moraine_Lake_17092005.jpg");
 
   min-height: 800px;
 }
@@ -178,9 +129,14 @@ body {
   padding: 20px;
   border: white 1pt solid;
   font-size: 16pt;
+  background-color: #282c34;
 }
 
 .skills {
+  margin: 10px;
+  padding: 20px;
+  border: white 1pt solid;
+  background-color: #282c34;
   font-family: 'Josefin Sans';
   text-align: center;
 }

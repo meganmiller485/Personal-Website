@@ -2,33 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div id="about-container">
       <hr className="aboutHR"></hr>
       <header className="header-about">
         About <span id="me">Me</span>
       </header>
-      <div className="floating-pics">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1200px-Moraine_Lake_17092005.jpg"
-          alt="mtns"
-        />
-        <img
-          src="https://peakvisor.com/img/news/southern-rocky-mountains.jpg"
-          alt="mtn2"
-        />
-        <img
-          src="https://wildlandtrekking.com/content/uploads/2020/09/ROCKY-MOUNTAINS.jpg"
-          alt="mtn3"
-        ></img>
-        <img
-          src="https://www.meganstarr.com/wp-content/uploads/2020/11/Moraine-Lake-in-Banff-Canada.jpg"
-          alt="mtn4"
-        />
-        <img
-          src="https://a.cdn-hotels.com/gdcs/production66/d638/09dfd9dc-2af3-4ca4-b1a0-e599fa18ff0c.jpg?impolicy=fcrop&w=800&h=533&q=medium"
-          alt="mtn5"
-        />
-      </div>
       <div className="about-container">
         <p className="about-paragraph">
           I am based in Denver, Colorado where I love to spend time outside. I
