@@ -1,27 +1,28 @@
-import React from "react";
-import hero from "../assets/images/heropic.jpg";
-import linkedin from "../assets/images/linkedinlogo.png";
-import githublogo from "../assets/images/githublogo.webp";
-import { Typewriter } from "react-simple-typewriter";
+import React from 'react';
+import hero from '../assets/images/heropic.jpg';
+import linkedin from '../assets/images/linkedinlogo.png';
+import githublogo from '../assets/images/githublogo.webp';
+
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   return (
     <>
-      <div className="hero-container">
-        <div className="hero-intro">
-          <div className="greeting">Welcome! My name is</div>
-          <div className="star"> Megan Miller</div>
-          <div className="typewriter">
+      <div className='hero-container'>
+        <div className='hero-intro'>
+          <div className='greeting'>Welcome! My name is</div>
+          <div className='star'> Megan Miller</div>
+          <div className='typewriter'>
             I am a
-            <span id="type">
+            <span id='type'>
               <Typewriter
                 loop
                 cursor
-                cursorStyle="|"
+                cursorStyle='|'
                 typeSpeed={120}
                 deleteSpeed={50}
                 delaySpeed={1000}
-                words={[" Developer.", " Web Designer.", " Software Engineer."]}
+                words={[' Developer.', ' Web Designer.', ' Software Engineer.']}
               />
             </span>
             <div />
@@ -29,35 +30,35 @@ const Hero = () => {
         </div>
         <div>
           <img
-            id="idpic"
+            id='idpic'
             src={hero}
-            alt="me"
+            alt='me'
           />
         </div>
       </div>
-      <footer className="main-foot">
+      <footer className='main-foot'>
         <a
-          href="https://www.linkedin.com/in/meganmiller485/"
-          target="_blank"
-          rel="noreferrer"
+          href='https://www.linkedin.com/in/meganmiller485/'
+          target='_blank'
+          rel='noreferrer'
         >
           <img
-            className="social"
-            id="linkedin"
+            className='social'
+            id='linkedin'
             src={linkedin}
-            alt="linked in"
+            alt='linked in'
           ></img>
         </a>
         <a
-          href="https://github.com/meganmiller485"
-          target="_blank"
-          rel="noreferrer"
+          href='https://github.com/meganmiller485'
+          target='_blank'
+          rel='noreferrer'
         >
           <img
-            className="social"
-            id="github"
+            className='social'
+            id='github'
             src={githublogo}
-            alt="github logo"
+            alt='github logo'
           ></img>
         </a>
       </footer>

@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const navLinks = [
   { navLinkId: 'Home', scrollToId: 'hero-container' },
-  { navLinkId: 'About', scrollToId: 'about-container' },
-  { navLinkId: 'Projects', scrollToId: 'projects-container' },
+  { navLinkId: 'About', scrollToId: 'big-about-container' },
+  { navLinkId: 'Projects', scrollToId: 'big-projects-container' },
   { navLinkId: 'Contact', scrollToId: 'contact-container' },
 ];
 
@@ -36,7 +36,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav>
+      <nav id='nav-bar'>
         {navLinks.map(({ navLinkId, scrollToId }) => (
           <NavLink
             navLinkId={navLinkId}

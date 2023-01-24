@@ -8,29 +8,29 @@
 }
 
 body {
-  margin:0;
+  margin: 0;
   background-color: black;
-
 }
 
 .App {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
 
-  color: white;
+  color: black;
 }
 
 nav {
-  display:flex;
-  justify-content: space-evenly;
-  padding: 1rem;
-  background-color: black;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(211, 217, 202);
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@ nav {
   font-family: 'Josefin Sans';
 }
 
-.star { 
+.star {
   font-size: 64pt;
   font-family: 'Bebas Neue';
 }
@@ -69,7 +69,7 @@ nav {
   border-radius: 50rem;
   width: 19rem;
   height: 19rem;
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: white;
 }
 
@@ -80,7 +80,7 @@ nav {
 
 #github {
   background-color: rgb(196, 190, 190);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   width: 4.86rem;
   height: 2rem;
 }
@@ -100,6 +100,7 @@ nav {
 }
 
 .header-about {
+  padding-bottom: 1rem;
   text-align: center;
   font-size: 32pt;
 }
@@ -109,39 +110,60 @@ nav {
   font-family: 'Josefin Sans';
 }
 
-.about-pic-container{
-  display:flex;
-  justify-content: center
+#aspen-pic-container {
+  display: flex;
+  justify-content: center;
 }
 
+#aspen-pic {
+  text-align: center;
+  width: 100%;
+  height: 40rem;
+  opacity: 70%;
+}
 
 .about-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   margin: 1rem;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1200px-Moraine_Lake_17092005.jpg");
-
-  min-height: 800px;
 }
 
 .about-paragraph {
   margin: 10px;
   padding: 20px;
-  border: white 1pt solid;
+  width: 50%;
+  background-color: white;
+  border: rgb(3, 3, 3) 1pt solid;
   font-size: 16pt;
-  background-color: #282c34;
 }
 
 .skills {
   margin: 10px;
   padding: 20px;
-  border: white 1pt solid;
-  background-color: #282c34;
+  border: rgb(3, 3, 3) 1pt solid;
   font-family: 'Josefin Sans';
+  background-color: white;
   text-align: center;
 }
 
 .skillheader {
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+/*********** PROJECTS ************/
+.projectsHR {
+  margin: 3rem;
+}
+
+.header-projects {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 32pt;
+}
+
+.projects-container {
+  min-height: 80rem;
 }
