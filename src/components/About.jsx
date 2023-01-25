@@ -1,20 +1,13 @@
 import React from 'react';
-import aspens from '../assets/images/aspens.png';
 
 const About = () => {
   return (
-    <div id='big-about-container'>
-      <hr className='aboutHR'></hr>
-      <header className='header-about'>
+    <div>
+      <div id='about-pic-container'></div>
+      <header id='header-about'>
         About <span id='me'>Me</span>
       </header>
-      <div id='aspen-pic-container'>
-        <img
-          id='aspen-pic'
-          src={aspens}
-          alt='aspen img'
-        />
-      </div>
+
       <div className='about-container'>
         <p className='about-paragraph'>
           I am based in Denver, Colorado where I love to spend time outside. I
@@ -31,7 +24,7 @@ const About = () => {
           <div>Other: GitHub | ArcGIS Pro</div>
         </p>
       </div>
-      <div>
+      <div id='about-buttons'>
         <button id='chatbutton'>Let's Talk!</button>
         <button id='resume'>Download my Resume</button>
       </div>
