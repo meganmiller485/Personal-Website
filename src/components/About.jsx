@@ -19,9 +19,11 @@ const About = () => {
         </p>
         <p className='skills'>
           <header className='skillheader'>Technical Skills:</header>
-          <div>Front-End: JavaScript | React | HTML | CSS</div>
-          <div>Back-End: Node.js | Express | PostgreSQL | Databases |</div>
-          <div>Other: GitHub | ArcGIS Pro</div>
+          <div>
+            {' '}
+            JavaScript | React | HTML | CSS Node.js | Express | PostgreSQL |
+            Databases | GitHub | ArcGIS Pro
+          </div>
         </p>
       </div>
       <div id='about-buttons'>

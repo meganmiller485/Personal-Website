@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
-
   color: black;
 }
 
@@ -152,23 +151,74 @@ nav {
   gap: 2rem;
 }
 
-/*********** PROJECTS ************/
+/*********** PORTFOLIO ************/
 
-#project-pic-container {
+#portfolio-pic-container {
   min-height: 25rem;
   background-image: url('./assets/images/medicine-bow.jpeg');
   background-attachment: fixed;
   background-size: cover;
 }
 
-#header-projects {
+#header-portfolio {
   padding: 1rem;
   text-align: center;
   font-size: 32pt;
 }
 
-.projects-container {
+.portfolio-intro {
+  text-align: center;
+}
+
+.portfolio-container {
   min-height: 40rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.singleProjContainer {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+}
+
+.proj-Img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.proj-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(211, 217, 202);
+  cursor: pointer;
+}
+
+.singleProjContainer:hover .proj-overlay {
+  opacity: 1;
+}
+
+.proj-desc {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /*********** CONTACT ************/
@@ -184,6 +234,10 @@ nav {
   padding: 1rem;
   text-align: center;
   font-size: 32pt;
+}
+
+.contact-desc {
+  text-align: center;
 }
 
 .contact-container {

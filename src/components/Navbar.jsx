@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const navLinks = [
   { navLinkId: 'Home', scrollToId: 'hero-container' },
   { navLinkId: 'About', scrollToId: 'header-about' },
-  { navLinkId: 'Projects', scrollToId: 'header-projects' },
+  { navLinkId: 'Projects', scrollToId: 'header-portfolio' },
   { navLinkId: 'Contact', scrollToId: 'header-contact' },
 ];
 
