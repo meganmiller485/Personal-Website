@@ -29,15 +29,16 @@ a {
   display: flex;
   margin-top: 0;
   justify-content: space-evenly;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
   color: white;
   background-color: rgb(211, 217, 202);
   cursor: pointer;
-  transform-origin: left top;
+  /* transform-origin: left top;
   transform: rotate(-90deg) translateX(-100%);
   width: 100vh;
-  height: auto;
+  height: auto; */
 }
 
 #is-sticky {
@@ -50,7 +51,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 6rem;
   padding-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
