@@ -8,7 +8,10 @@ import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
     <>
-      <div className='hero-container'>
+      <div
+        className='hero-container'
+        id='hero-container'
+      >
         <div className='hero-intro'>
           <div className='greeting'>Welcome! My name is</div>
           <div className='star'> Megan Miller</div>

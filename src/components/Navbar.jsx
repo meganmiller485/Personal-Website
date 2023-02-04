@@ -1,51 +1,16 @@
-import React, { useState } from 'react';
-
-const navLinks = [
-  { navLinkId: 'Home', scrollToId: 'hero-container' },
-  { navLinkId: 'About', scrollToId: 'header-about' },
-  { navLinkId: 'Projects', scrollToId: 'header-portfolio' },
-  { navLinkId: 'Contact', scrollToId: 'header-contact' },
-];
-
-const NavLink = ({
-  navLinkId,
-  scrollToId,
-  activeNavLinkId,
-  setActiveNavLinkId,
-}) => {
-  const handleClick = () => {
-    setActiveNavLinkId(navLinkId);
-    document.getElementById(scrollToId).scrollIntoView({
-      behavior: 'smooth', // gives an ease-in-out effect to our scroll
-    });
-  };
-
-  return (
-    <span
-      id={navLinkId}
-      className={activeNavLinkId === navLinkId ? 'activeClass' : ''}
-      onClick={handleClick}
-    >
-      {navLinkId}
-    </span>
-  );
-};
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-  const [activeNavLinkId, setActiveNavLinkId] = useState('');
-
   return (
-    <div>
-      <nav id='nav-bar'>
-        {navLinks.map(({ navLinkId, scrollToId }) => (
-          <NavLink
-            navLinkId={navLinkId}
-            scrollToId={scrollToId}
-            activeNavLinkId={activeNavLinkId}
-            setActiveNavLinkId={setActiveNavLinkId}
-          />
-        ))}
-      </nav>
+    <div
+      className='navbar'
+      id='is-sticky'
+    >
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='/about'>About</NavLink>
+      <NavLink to='/portfolio'>Portfolio</NavLink>
+      <NavLink to='/contact'>Contact</NavLink>
     </div>
   );
 };
