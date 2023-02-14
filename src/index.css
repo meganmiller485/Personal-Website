@@ -33,6 +33,42 @@ a {
   cursor: pointer;
 }
 
+#HOME:hover {
+  color: #494646;
+  cursor: pointer;
+}
+#HOME:active {
+  text-decoration: underline;
+}
+
+#ABOUT:hover {
+  color: #494646;
+  cursor: pointer;
+}
+#ABOUT:active {
+  text-decoration: underline;
+}
+
+#PORTFOLIO:hover {
+  color: #494646;
+  cursor: pointer;
+}
+#PORTFOLIO:active {
+  text-decoration: underline;
+}
+
+#MEG {
+  text-decoration: none;
+}
+
+#MEG:hover {
+  color: #494646;
+  cursor: pointer;
+}
+#MEG:active {
+  text-decoration: underline;
+}
+
 .links {
   display: flex;
   gap: 2rem;
@@ -47,6 +83,14 @@ a {
 #contact-link {
   color: black;
   font-weight: bolder;
+}
+
+#contact-link:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+#contact-link:active {
+  text-decoration: underline;
 }
 
 #is-sticky {
@@ -298,6 +342,19 @@ a {
   gap: 2rem;
 }
 
+#talk {
+  font-size: 14pt;
+}
+
+#chat {
+  color: rgb(92, 92, 92);
+  text-decoration: none;
+}
+
+#resume {
+  font-size: 14pt;
+}
+
 .storyheader {
   display: flex;
   justify-content: flex-start;
@@ -363,14 +420,8 @@ a {
 
 /*********** PORTFOLIO ************/
 
-#portfolio-pic-container {
-  min-height: 25rem;
-  background-image: url('./assets/images/medicine-bow.jpeg');
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 #header-portfolio {
+  margin-top: 8rem;
   padding: 1rem;
   text-align: center;
   font-size: 32pt;
@@ -378,10 +429,14 @@ a {
 
 .portfolio-intro {
   text-align: center;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
+  line-height: 1.5;
 }
 
 .portfolio-container {
-  min-height: 40rem;
+  min-height: 30rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -412,7 +467,8 @@ a {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgb(211, 217, 202);
+  border: 2pt rgb(211, 217, 202) solid;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -421,7 +477,8 @@ a {
 }
 
 .proj-desc {
-  color: white;
+  color: black;
+  text-align: center;
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -431,32 +488,73 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/*********** CONTACT ************/
-
-#contact-pic-container {
-  min-height: 25rem;
-  background-image: url('./assets/images/moab.jpeg');
-  background-attachment: fixed;
-  background-size: cover;
+#techs-used {
+  color: #ff6464;
 }
+
+/*********** CONTACT ************/
 
 #header-contact {
   padding: 1rem;
+  margin-top: 4rem;
   text-align: center;
   font-size: 32pt;
 }
 
 .contact-desc {
   text-align: center;
+  margin-top: 2rem;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
+  line-height: 1.5;
 }
 
 .contact-container {
-  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  min-height: 30rem;
+  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  border: white 2pt solid;
+  box-shadow: 0 0 1em rgb(158, 159, 166);
+  background-color: white;
+}
+
+#input-area {
+  padding: 0.5rem;
+  min-width: 30rem;
+}
+
+#message-area {
+  padding: 0.5rem;
+  min-width: 30rem;
+  max-width: 30rem;
+  min-height: 10rem;
+}
+
+.button {
+  margin: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  max-width: 10rem;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
 }
 
 /*********** FOOTER ************/
 
 #footer {
-  min-height: 7rem;
-  background-color: rgb(211, 217, 202);
+  color: rgb(92, 92, 92);
+  text-align: center;
 }

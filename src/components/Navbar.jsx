@@ -7,23 +7,33 @@ const NavBar = () => {
       className='navbar'
       id='is-sticky'
     >
-      <span>Megan Miller</span>
+      <span>
+        <NavLink
+          to='/about'
+          id='MEG'
+        >
+          Megan Miller
+        </NavLink>
+      </span>
       <span className='links'>
         <NavLink
           className='link'
           to='/'
+          id='HOME'
         >
           HOME
         </NavLink>
         <NavLink
           className='link'
           to='/about'
+          id='ABOUT'
         >
           ABOUT
         </NavLink>
         <NavLink
           className='link'
           to='/portfolio'
+          id='PORTFOLIO'
         >
           PORTFOLIO
         </NavLink>

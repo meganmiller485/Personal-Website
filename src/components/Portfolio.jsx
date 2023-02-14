@@ -5,8 +5,11 @@ import fitness from '../assets/images/fitness.png';
 const Portfolio = () => {
   return (
     <div id='big-portfolio-container'>
-      <div id='portfolio-pic-container'></div>
-      <header id='header-portfolio'>Portfolio</header>
+      <header id='header-portfolio'>
+        <span id='portfolioMe'>
+          Welcome To My <span id='me'>Portfolio</span>
+        </span>
+      </header>
       <div className='portfolio-intro'>Check out some of my work:</div>
       <div className='portfolio-container'>
         <div className='singleProjContainer'>
@@ -21,7 +24,9 @@ const Portfolio = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <div className='proj-desc'>Creative Juices</div>
+              <div className='proj-desc'>
+                Creative Juices<div id='techs-used'>React / JS</div>
+              </div>
             </a>
           </div>
         </div>
@@ -33,7 +38,15 @@ const Portfolio = () => {
             alt='img'
           ></img>
           <div className='proj-overlay'>
-            <div className='proj-desc'>Fitness Tracker</div>
+            <a
+              href='https://github.com/meganmiller485/fitnessTracker'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='proj-desc'>
+                Fitness Tracker <div id='techs-used'>React / JS</div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -44,18 +57,9 @@ const Portfolio = () => {
             alt='img'
           ></img>
           <div className='proj-overlay'>
-            <div className='proj-desc'>Wild Tree Rings</div>
-          </div>
-        </div>
-
-        <div className='singleProjContainer'>
-          <img
-            className='proj-Img'
-            src={paint}
-            alt='img'
-          ></img>
-          <div className='proj-overlay'>
-            <div className='proj-desc'>Description of proj</div>
+            <div className='proj-desc'>
+              Wild Tree Rings <div id='techs-used'>React / JS</div>
+            </div>
           </div>
         </div>
       </div>

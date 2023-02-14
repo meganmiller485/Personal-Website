@@ -2,6 +2,7 @@ import React from 'react';
 import aboutCollage from '../assets/images/aboutPics.jpeg';
 import geology from '../assets/images/geology.jpeg';
 import { Link } from 'react-router-dom';
+import resume from '../assets/images/MeganMiller_Resume.pdf';
 
 const About = () => {
   return (
@@ -109,8 +110,37 @@ const About = () => {
         </div>
       </div>
       <div id='about-buttons'>
-        <button id='chatbutton'>Let's Talk!</button>
-        <button id='resume'>Download my Resume</button>
+        <button
+          className='button'
+          id='talk'
+        >
+          <Link
+            id='chat'
+            to='/contact'
+          >
+            Let's Chat!
+          </Link>
+        </button>
+        <a
+          href={resume}
+          download='MeganMiller_Resume'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button
+            className='button'
+            id='resume'
+          >
+            Download my Resume
+          </button>
+        </a>
+
+        {/* <button
+          className='button'
+          id='resume'
+        >
+          Download my Resume
+        </button> */}
       </div>
       <hr className='aboutHR'></hr>
       <div className='allstory'>
@@ -164,22 +194,6 @@ const About = () => {
               Programming for GIS and Remote Sensing.
             </p>
           </div>
-          {/* I graduated from Fullstack Academy's Software Engineering Bootcamp in
-          February 2023 and have a Bachelor's Degree in Geology from Colorado
-          State University. Currently, I am based in Denver, Colorado, where I
-          am constantly developing. It was in the Geosciences Department where I
-          first kindled my love for technology. Geographic Information Systems
-          and Remote Sensing courses took over my schedule and I knew it was
-          something I would want to pursue after graduation. I enjoy learning
-          and easily adapt to the constantly evolving tech world. I am regularly
-          improving my skills and expanding my knowledge. My goal is to balance
-          my love of practical technology with my commitment to the outdoors. */}
-          {/* I am based in Denver, Colorado where I love to spend time outside. 
-          I am a passionate software engineer who specializes in JavaScript web
-          development. I enjoy learning and easily adapt to the constantly
-          evolving tech world. I am regularly improving my skills and expanding
-          my knowledge. My goal is to balance my love of practical technology
-          with my commitment to the outdoors. */}
         </div>
         <p className='story-extend'>
           After graduation, I knew I wanted to pursue software engineering, but

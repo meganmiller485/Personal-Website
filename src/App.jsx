@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
-import Home from './components/Home';
+
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -34,12 +34,7 @@ function App() {
         ></Route>
       </Routes>
 
-      {/* <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
