@@ -29,7 +29,7 @@ a {
   justify-content: space-between;
   padding: 1.5rem;
   color: white;
-  background-color: #2c666e;
+  background-color: #2c666ecf;
   cursor: pointer;
 }
 
@@ -235,7 +235,7 @@ a {
 
 /*********** BARS ************/
 .js {
-  width: 65%;
+  width: 70%;
   background-color: #2c666e;
 }
 .html {
@@ -247,7 +247,7 @@ a {
   background-color: #2c666e;
 }
 .react {
-  width: 65%;
+  width: 85%;
   background-color: #2c666e;
 }
 .node {
@@ -265,12 +265,30 @@ a {
 
 /*********** ^^^BARS^^^^ ************/
 
-.about-paragraph {
-  margin: 1rem;
-  padding: 2rem;
+.skills-paragraph {
+  margin-top: 2rem;
+  font-size: 14pt;
+  font-family: 'Josefin Sans';
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  width: 35rem;
+}
+
+.power-word {
+  color: #ff6464;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  font-weight: bolder;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.listItem {
   font-size: 16pt;
-  flex-basis: 110%;
-  text-align: center;
+  font-family: 'Josefin Sans';
+  color: rgb(64, 63, 63);
 }
 
 #about-buttons {
@@ -278,6 +296,69 @@ a {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.storyheader {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-size: 32pt;
+}
+
+#story-word {
+  margin-top: 0.5rem;
+  color: #2c666e;
+  font-family: 'Josefin Sans';
+}
+
+.allstory {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.mystory {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
+  line-height: 1.5;
+  min-width: 60rem;
+}
+
+.story-extend {
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
+  line-height: 1.5;
+}
+
+#csu {
+  font-weight: bolder;
+  color: green;
+  text-decoration: none;
+}
+
+#fullstack {
+  font-weight: bolder;
+  color: red;
+  text-decoration: none;
+}
+
+#port {
+  font-weight: bolder;
+  color: #2c666e;
+  text-decoration: none;
+}
+
+#geologypic {
+  width: 25rem;
+  border: white 2pt solid;
+  box-shadow: 0 0 1em rgb(158, 159, 166);
+  background-color: white;
 }
 
 /*********** PORTFOLIO ************/
