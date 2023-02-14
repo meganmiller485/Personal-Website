@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 /*********** BIG APPLE ************/
-. {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
@@ -26,19 +23,30 @@ a {
 }
 
 .navbar {
+  font-family: 'Josefin Sans';
   display: flex;
   margin-top: 0;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 1.5rem;
-  /* padding-top: 2rem;
-  padding-bottom: 2rem; */
   color: white;
-  background-color: rgb(211, 217, 202);
+  background-color: #2c666e;
   cursor: pointer;
-  /* transform-origin: left top;
-  transform: rotate(-90deg) translateX(-100%);
-  width: 100vh;
-  height: auto; */
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  padding-top: 0.3rem;
+}
+
+.link {
+  font-size: 14pt;
+  text-decoration: none;
+}
+
+#contact-link {
+  color: black;
+  font-weight: bolder;
 }
 
 #is-sticky {
@@ -57,7 +65,7 @@ a {
   padding-bottom: 6rem;
   justify-content: space-evenly;
   gap: 1rem;
-  min-height: 25rem;
+  min-height: 27rem;
 }
 
 .greeting {
@@ -75,7 +83,7 @@ a {
 }
 
 #type {
-  color: rgb(92, 120, 92);
+  color: #07393c;
 }
 
 #idpic {
@@ -84,6 +92,10 @@ a {
   height: 19rem;
   padding: 0.25rem;
   background-color: white;
+}
+
+.heroHR {
+  width: 60rem;
 }
 
 #linkedin {
@@ -109,53 +121,156 @@ a {
 /*********** ABOUT ME ************/
 
 #me {
-  color: rgb(92, 120, 92);
+  color: #2c666e;
   font-family: 'Josefin Sans';
 }
 
-#about-pic-container {
-  min-height: 10rem;
-  background-image: url('./assets/images/aspens.png');
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 #header-about {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem;
   padding: 1rem;
-  text-align: center;
+  min-height: 10rem;
   font-size: 32pt;
 }
+
+.lilabout {
+  margin-top: 2rem;
+  font-size: 18pt;
+  font-family: 'Josefin Sans';
+  color: rgb(92, 92, 92);
+  width: 20rem;
+  line-height: 1.5;
+}
+
+.lillilabout {
+  margin-top: 2rem;
+  font-size: 14pt;
+  font-family: 'Josefin Sans';
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  width: 25rem;
+}
+
+#java-word {
+  color: #ff6464;
+  font-weight: bolder;
+}
+
+#aboutPic {
+  width: 25rem;
+  border: white 2pt solid;
+  box-shadow: 0 0 1em rgb(158, 159, 166);
+  background-color: white;
+}
+
+.aboutHR {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
 .about-container {
+  margin-right: 4rem;
+  margin-left: 4rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem;
+  flex-direction: column;
   min-height: 25rem;
 }
+
+.aboutcontent {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+/*********** SKILL STUFF ************/
+
+.skillheader {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-size: 32pt;
+}
+
+#skills-word {
+  margin-top: 0.5rem;
+  color: #2c666e;
+  font-family: 'Josefin Sans';
+}
+
+.allskills {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  background-color: white;
+}
+
+.skillbars {
+  width: 50rem;
+}
+
+.bar {
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 0.5rem;
+}
+
+.tech {
+  font-size: 12pt;
+}
+
+.percent {
+  margin-top: 0.4rem;
+  margin-right: 0.4rem;
+  font-size: 12pt;
+}
+
+/*********** BARS ************/
+.js {
+  width: 65%;
+  background-color: #2c666e;
+}
+.html {
+  width: 90%;
+  background-color: #2c666e;
+}
+.css {
+  width: 80%;
+  background-color: #2c666e;
+}
+.react {
+  width: 65%;
+  background-color: #2c666e;
+}
+.node {
+  width: 65%;
+  background-color: #2c666e;
+}
+.express {
+  width: 65%;
+  background-color: #2c666e;
+}
+.postgresql {
+  width: 65%;
+  background-color: #2c666e;
+}
+
+/*********** ^^^BARS^^^^ ************/
 
 .about-paragraph {
   margin: 1rem;
   padding: 2rem;
-  background-color: rgb(255, 255, 255);
-  border: rgb(3, 3, 3) 1pt solid;
   font-size: 16pt;
   flex-basis: 110%;
   text-align: center;
-}
-
-.skills {
-  margin: 1rem;
-  padding: 2rem;
-  border: rgb(3, 3, 3) 1pt solid;
-  font-family: 'Josefin Sans';
-  background-color: white;
-  text-align: center;
-}
-
-.skillheader {
-  text-align: center;
-  padding: 1rem;
-  text-decoration: underline;
 }
 
 #about-buttons {
