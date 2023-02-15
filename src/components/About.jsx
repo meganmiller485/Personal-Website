@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutCollage from '../assets/images/aboutPics.png';
 import geology from '../assets/images/geology.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import resume from '../assets/images/MeganMiller_Resume.pdf';
 
 const About = () => {
@@ -114,12 +114,12 @@ const About = () => {
           className='button'
           id='talk'
         >
-          <Link
+          <NavLink
             id='chat'
             to='/contact'
           >
             Let's Chat!
-          </Link>
+          </NavLink>
         </button>
         <a
           href={resume}
@@ -200,12 +200,12 @@ const About = () => {
           software design, learning new techniques, strengthening my skills, and
           creating something to be proud of. Check out some of my{' '}
           <span>
-            <Link
+            <NavLink
               id='port'
               to='/portfolio'
             >
               work
-            </Link>
+            </NavLink>
           </span>
           !
         </p>
