@@ -15,12 +15,12 @@ const About = () => {
             I'm a software developer based in Denver, Colorado.
           </div>
           <div className='lillilabout'>
-            Since 2022, I have dedicated my time to solving problems with a fun
-            tude. I specialize in <span id='java-word'>JavaScript</span> web
-            development, but am constantly exploring new technologies, and
-            implementing the skills I have acquired into different projects.
+            Since 2022, I have dedicated my time to solving complex problems
+            with enthusiasm and grace. Though I specialize in{' '}
+            <span id='java-word'>JavaScript</span> web development, I love
+            exploring new technologies and implementing them into my projects.
             When i'm not behing the screen, you can find me tromping around in
-            the mountains.{' '}
+            the mountains, snow or shine.{' '}
           </div>
         </span>
         <span>
@@ -43,49 +43,49 @@ const About = () => {
           <div className='aboutcontent'>
             <div className='skillbars'>
               <p className='tech'>JavaScript</p>
-              <div class='bar'>
-                <div class='skills js'></div>
+              <div className='bar'>
+                <div className='skills js'></div>
                 <span className='percent'>70%</span>
               </div>
 
               <p className='tech'>HTML</p>
-              <div class='bar'>
-                <div class='skills html'></div>
+              <div className='bar'>
+                <div className='skills html'></div>
                 <span className='percent'>90%</span>
               </div>
 
               <p className='tech'>CSS</p>
-              <div class='bar'>
-                <div class='skills css'></div>
+              <div className='bar'>
+                <div className='skills css'></div>
                 <span className='percent'>80%</span>
               </div>
 
               <p className='tech'>React</p>
-              <div class='bar'>
-                <div class='skills react'></div>
+              <div className='bar'>
+                <div className='skills react'></div>
                 <span className='percent'>85%</span>
               </div>
 
               <p className='tech'>NodeJS</p>
-              <div class='bar'>
-                <div class='skills node'></div>
+              <div className='bar'>
+                <div className='skills node'></div>
                 <span className='percent'>65%</span>
               </div>
 
               <p className='tech'>ExpressJS</p>
-              <div class='bar'>
-                <div class='skills express'></div>
+              <div className='bar'>
+                <div className='skills express'></div>
                 <span className='percent'>65%</span>
               </div>
 
               <p className='tech'>PostgreSQL</p>
-              <div class='bar'>
-                <div class='skills postgresql'></div>
+              <div className='bar'>
+                <div className='skills postgresql'></div>
                 <span className='percent'>65%</span>
               </div>
             </div>
 
-            <p className='skills-paragraph'>
+            <div className='skills-paragraph'>
               I make a point to know the latest technologies so that I can
               produce the most <span className='power-word'>efficient</span>,{' '}
               <span className='power-word'>responsive</span>,{' '}
@@ -105,7 +105,7 @@ const About = () => {
                 <li className='listItem'>PayPal React</li>
                 <li className='listItem'>ArcGIS Pro</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -134,13 +134,6 @@ const About = () => {
             Download my Resume
           </button>
         </a>
-
-        {/* <button
-          className='button'
-          id='resume'
-        >
-          Download my Resume
-        </button> */}
       </div>
       <hr className='aboutHR'></hr>
       <div className='allstory'>
@@ -204,8 +197,8 @@ const About = () => {
           During my time there, I gained experience as a full-stack developer
           and was successful in building and deploying various web applications
           where I utilized a multitude of technologies. I absolutely love
-          software design, learning new technologies, and implementing the
-          skills I have acquired into new projects. Check out my{' '}
+          software design, learning new techniques, strengthening my skills, and
+          creating something to be proud of. Check out some of my{' '}
           <span>
             <Link
               id='port'

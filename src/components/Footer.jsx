@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <div id='footer-container'>
       <footer id='footer'>
+        MEGAN MILLER
         <FontAwesomeIcon
-          className='instagram-social'
+          className='copyright-icon'
           icon={faCopyright}
-          size='1x'
           color='rgb(92, 92, 92)'
-        />
-        Megan Miller
+        />{' '}
+        2023
       </footer>
     </div>
   );
