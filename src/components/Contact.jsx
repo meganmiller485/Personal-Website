@@ -6,7 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import mayflower from '../assets/images/mayflower.jpeg';
+import mayflower from '../assets/images/mayflower.png';
 
 const Contact = () => {
   const form = useRef();

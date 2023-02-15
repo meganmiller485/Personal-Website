@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutCollage from '../assets/images/aboutPics.jpeg';
-import geology from '../assets/images/geology.jpeg';
+import aboutCollage from '../assets/images/aboutPics.png';
+import geology from '../assets/images/geology.png';
 import { Link } from 'react-router-dom';
 import resume from '../assets/images/MeganMiller_Resume.pdf';
 
