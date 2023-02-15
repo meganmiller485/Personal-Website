@@ -1,7 +1,8 @@
 {
   "name": "my-port",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
