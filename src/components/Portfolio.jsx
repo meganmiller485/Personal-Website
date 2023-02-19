@@ -57,9 +57,15 @@ const Portfolio = () => {
             alt='img'
           ></img>
           <div className='proj-overlay'>
-            <div className='proj-desc'>
-              Wild Tree Rings <div id='techs-used'>React / JS</div>
-            </div>
+            <a
+              href='https://github.com/meganmiller485/wildTreeRings'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='proj-desc'>
+                Wild Tree Rings <div id='techs-used'>React / JS</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

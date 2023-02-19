@@ -151,7 +151,7 @@ const About = () => {
             />
           </span>
           <div>
-            <p>
+            <p className='top-paragraph'>
               I am a graduate from{' '}
               <span>
                 <a

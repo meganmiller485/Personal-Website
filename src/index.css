@@ -460,6 +460,10 @@ a {
   min-width: 60rem;
 }
 
+.top-paragraph {
+  margin-right: 4rem;
+}
+
 .story-extend {
   font-size: 14pt;
   font-family: 'Josefin Sans';
