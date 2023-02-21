@@ -68,7 +68,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-        <div className='singleProjContainer'>
+        {/* <div className='singleProjContainer'>
           <img
             className='proj-Img'
             src='https://images.squarespace-cdn.com/content/v1/609173bccf308b7f7e1122a0/1621006808313-Y5ZZ2NB7NAC0QS628AYI/Allotment+Ash+Tree+Ring+unframed+print.jpg?format=1000w'
@@ -85,7 +85,7 @@ const Portfolio = () => {
               </div>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
