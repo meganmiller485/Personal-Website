@@ -5,6 +5,7 @@ import fitness from '../assets/images/fitness.png';
 const Portfolio = () => {
   return (
     <div id='big-portfolio-container'>
+      <hr className='aboutHR'></hr>
       <header id='header-portfolio'>
         <span id='portfolioMe'>
           Welcome To My <span id='me'>Portfolio</span>

@@ -41,6 +41,7 @@ const Contact = () => {
   };
   return (
     <div id='big-contact-container'>
+      <hr className='aboutHR'></hr>
       <header id='header-contact'>
         <span id='portfolioMe'>
           Contact <span id='me'>Me</span>
