@@ -39,7 +39,7 @@ const Hero = () => {
               href='#big-portfolio-container'
               class='btn btn1'
             >
-              Checkout My Work
+              Check out My Work
               <span>
                 <FontAwesomeIcon
                   id='chev'
