@@ -36,10 +36,10 @@ const Hero = () => {
           </div>
           <div class='middle'>
             <a
-              href='/about'
+              href='#big-portfolio-container'
               class='btn btn1'
             >
-              Checkout My Site
+              Checkout My Work
               <span>
                 <FontAwesomeIcon
                   id='chev'

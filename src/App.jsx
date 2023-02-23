@@ -18,27 +18,6 @@ function App() {
       <Portfolio />
       <Contact />
 
-      {/* <Routes>
-        <Route
-          path='/'
-          element={<Hero />}
-        ></Route>
-
-        <Route
-          path='/about'
-          element={<About />}
-        ></Route>
-
-        <Route
-          path='/portfolio'
-          element={<Portfolio />}
-        ></Route>
-        <Route
-          path='/contact'
-          element={<Contact />}
-        ></Route>
-      </Routes> */}
-
       <Footer />
     </div>
   );

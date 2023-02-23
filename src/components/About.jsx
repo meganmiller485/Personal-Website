@@ -198,16 +198,7 @@ const About = () => {
           and was successful in building and deploying various web applications
           where I utilized a multitude of technologies. I absolutely love
           software design, learning new techniques, strengthening my skills, and
-          creating something to be proud of. Check out some of my{' '}
-          <span>
-            <NavLink
-              id='port'
-              to='/portfolio'
-            >
-              work
-            </NavLink>
-          </span>
-          !
+          creating something to be proud of.
         </p>
       </div>
     </div>
