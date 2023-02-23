@@ -6,8 +6,6 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 
-import { Routes, Route } from 'react-router-dom';
-
 function App() {
   return (
     <div
@@ -15,8 +13,12 @@ function App() {
       id='bigApp'
     >
       <Navbar />
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
 
-      <Routes>
+      {/* <Routes>
         <Route
           path='/'
           element={<Hero />}
@@ -35,7 +37,7 @@ function App() {
           path='/contact'
           element={<Contact />}
         ></Route>
-      </Routes>
+      </Routes> */}
 
       <Footer />
     </div>
