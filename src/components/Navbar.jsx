@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const navLinks = [
   { navLinkId: 'HOME', scrollToId: 'hero-container' },
@@ -33,21 +35,30 @@ const NavLinkStuff = ({
 
 const NavBar = () => {
   const [activeNavLinkId, setActiveNavLinkId] = useState('');
+
+  const [openPlease, setOpenPlease] = useState(false);
+  const handlePlease = () => {
+    setOpenPlease(!openPlease);
+  };
+
   return (
-    <div
-      className='navbar'
-      id='is-sticky'
-    >
-      <span id='MEG'>
-        <a
-          id='MEG'
-          href='#hero-container'
+    <div>
+      <button
+        className='my-button'
+        id='my-button'
+        onClick={handlePlease}
+      >
+        <FontAwesomeIcon
+          className='fas fa-bars'
+          icon={faBars}
+          color='black'
+        />
+      </button>
+      {openPlease ? (
+        <div
+          className='nav-elements-mobile'
+          id='nav-mobile'
         >
-          Megan Miller
-        </a>
-      </span>
-      <nav>
-        <div className='nav-elements'>
           {navLinks.map(({ navLinkId, scrollToId }) => (
             <NavLinkStuff
               key={navLinkId}
@@ -58,7 +69,33 @@ const NavBar = () => {
             />
           ))}
         </div>
-      </nav>
+      ) : null}
+      <div
+        className='navbar'
+        id='is-sticky'
+      >
+        <span id='MEG'>
+          <a
+            id='MEG'
+            href='#hero-container'
+          >
+            Megan Miller
+          </a>
+        </span>
+        <nav>
+          <div className='nav-elements'>
+            {navLinks.map(({ navLinkId, scrollToId }) => (
+              <NavLinkStuff
+                key={navLinkId}
+                navLinkId={navLinkId}
+                scrollToId={scrollToId}
+                activeNavLinkId={activeNavLinkId}
+                setActiveNavLinkId={setActiveNavLinkId}
+              />
+            ))}
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };
