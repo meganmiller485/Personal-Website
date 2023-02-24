@@ -5,7 +5,7 @@ import resume from '../assets/images/MeganMiller_Resume.pdf';
 
 const About = () => {
   return (
-    <div>
+    <div className='about-media'>
       <div id='about-pic-container'></div>
       <header id='header-about'>
         <span id='aboutMe'>
