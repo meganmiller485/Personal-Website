@@ -42,7 +42,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <div id='is-sticky'>
       <button
         className='my-button'
         id='my-button'
@@ -70,10 +70,7 @@ const NavBar = () => {
           ))}
         </div>
       ) : null}
-      <div
-        className='navbar'
-        id='is-sticky'
-      >
+      <div className='navbar'>
         <span id='MEG'>
           <a
             id='MEG'

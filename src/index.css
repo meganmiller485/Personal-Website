@@ -33,15 +33,15 @@ body {
   cursor: pointer;
 }
 
+#is-sticky {
+  position: sticky;
+  top: 0;
+}
+
 .nav-elements {
   display: flex;
   gap: 1rem;
   font-size: 14pt;
-}
-
-#is-sticky {
-  position: sticky;
-  top: 0;
 }
 
 #HOME:hover {
@@ -689,6 +689,10 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 800px) {
+  #is-sticky {
+    position: unset;
+  }
+
   .navbar {
     display: none;
     flex-direction: column;
