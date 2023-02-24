@@ -1,7 +1,6 @@
 import React from 'react';
 import aboutCollage from '../assets/images/aboutPics.png';
 import geology from '../assets/images/geology.png';
-import { NavLink } from 'react-router-dom';
 import resume from '../assets/images/MeganMiller_Resume.pdf';
 
 const About = () => {
@@ -110,16 +109,13 @@ const About = () => {
         </div>
       </div>
       <div id='about-buttons'>
-        <button
-          className='button'
-          id='talk'
-        >
-          <NavLink
-            id='chat'
-            to='/contact'
+        <button className='button'>
+          <a
+            id='talk'
+            href='#big-contact-container'
           >
             Let's Chat!
-          </NavLink>
+          </a>
         </button>
         <a
           href={resume}

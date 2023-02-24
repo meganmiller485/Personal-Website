@@ -18,9 +18,9 @@ body {
   margin-top: 0;
 }
 
-a {
+/* a {
   color: white;
-}
+} */
 
 .navbar {
   font-family: 'Josefin Sans';
@@ -72,6 +72,7 @@ a {
 }
 
 #MEG {
+  color: white;
   font-size: 15pt;
   text-decoration: none;
 }
@@ -412,7 +413,9 @@ a {
 }
 
 #talk {
+  color: rgb(92, 92, 92);
   font-size: 14pt;
+  text-decoration: none;
 }
 
 #chat {
