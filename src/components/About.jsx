@@ -1,7 +1,6 @@
 import React from 'react';
 import aboutCollage from '../assets/images/aboutPics.png';
 import geology from '../assets/images/geology.png';
-import resume from '../assets/images/MeganMiller_Resume.pdf';
 
 const About = () => {
   return (
@@ -118,7 +117,7 @@ const About = () => {
           </a>
         </button>
         <a
-          href={resume}
+          href='https://drive.google.com/file/d/1kG11iertPhcf8Lwualh-6W6y9it0WG1-/view'
           download='MeganMiller_Resume'
           target='_blank'
           rel='noreferrer'
@@ -127,7 +126,7 @@ const About = () => {
             className='button'
             id='resume'
           >
-            Download my Resume
+            Resume
           </button>
         </a>
       </div>
