@@ -687,7 +687,7 @@ body {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 800px) {
   .navbar {
     display: none;
     flex-direction: column;
@@ -712,24 +712,5 @@ body {
     color: black;
     cursor: pointer;
     transform: scale(1.2);
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar.show {
-    display: flex;
-  }
-
-  .my-button {
-    display: block;
-  }
-  .navbar {
-    background-color: rgb(62, 109, 149);
   }
 }
