@@ -58,7 +58,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <hr className='heroHR'></hr>
+      <hr className='aboutHR'></hr>
       <footer className='main-foot'>
         <a
           href='https://www.linkedin.com/in/meganmiller485/'
