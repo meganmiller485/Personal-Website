@@ -666,7 +666,7 @@ body {
   color: #2c666e;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 23rem;
+  margin-right: 32rem;
   margin-top: 2rem;
   float: right;
   display: none;
@@ -693,7 +693,8 @@ body {
   #root {
     display: flex;
     align-items: center;
-    margin-left: -20rem;
+    margin-left: -24rem;
+    overflow-x: hidden;
   }
 
   #is-sticky {
@@ -717,6 +718,26 @@ body {
     display: flex;
     margin-left: 50%;
   }
+
+  /* .greeting {
+    margin-left: -6rem;
+    font-size: 18pt;
+  }
+
+  .star {
+    font-size: 30pt;
+    margin-left: -4rem;
+  }
+
+  .typewriter {
+    margin-left: -3rem;
+  }
+
+  #idpic {
+    margin-left: -6rem;
+    width: 12rem;
+    height: 12rem;
+  } */
   #CONTACT {
     color: #2c666e;
   }
