@@ -663,12 +663,12 @@ body {
 .my-button {
   background-color: transparent;
   border: 10px;
-  color: black;
+  color: #2c666e;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 32px;
+  margin-right: 23rem;
+  margin-top: 2rem;
   float: right;
-  line-height: 70px;
   display: none;
 }
 
@@ -684,11 +684,17 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 2rem;
+
   gap: 2rem;
   display: none;
 }
 
 @media (min-width: 320px) and (max-width: 800px) {
+  #root {
+    display: flex;
+    align-items: center;
+  }
+
   #is-sticky {
     position: unset;
   }
@@ -708,6 +714,7 @@ body {
   }
   .nav-elements-mobile {
     display: flex;
+    margin-left: 50%;
   }
   #CONTACT {
     color: #2c666e;
@@ -725,11 +732,7 @@ body {
   }
 
   .btn.btn1 {
-    display: flex;
-
-    font-size: 10pt;
-    width: 8rem;
-    margin-top: 43rem;
+    display: none;
   }
 
   #header-about {
@@ -745,6 +748,11 @@ body {
     align-items: center;
   }
 
+  .skillheader {
+    display: flex;
+    justify-content: center;
+  }
+
   .skillbars {
     width: 20rem;
   }
@@ -753,10 +761,14 @@ body {
     width: 24rem;
   }
 
+  .storyheader {
+    display: flex;
+    justify-content: center;
+  }
   .mystory {
     display: flex;
-    margin-left: -21rem;
-    align-items: center;
+
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -766,7 +778,7 @@ body {
   }
 
   .story-extend {
-    margin-left: -4rem;
+    margin-left: 17rem;
     width: 24rem;
   }
 
@@ -776,7 +788,21 @@ body {
     align-items: center;
     gap: 1rem;
   }
+
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .big-contact-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
   #mayflower {
-    align-items: center;
+    margin: auto;
   }
 }
