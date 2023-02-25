@@ -159,7 +159,7 @@ const About = () => {
                 </a>
               </span>{' '}
               with a Bachelor of Science in Geology and a recipient of a
-              Certificate of Completion in Software Engineering powered by
+              Certificate of Completion in Software Engineering powered by{' '}
               <span>
                 <a
                   id='fullstack'
@@ -167,7 +167,6 @@ const About = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  {' '}
                   Fullstack Academy
                 </a>
               </span>

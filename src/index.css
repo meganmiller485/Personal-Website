@@ -473,13 +473,11 @@ body {
 #csu {
   font-weight: bolder;
   color: green;
-  text-decoration: none;
 }
 
 #fullstack {
   font-weight: bolder;
   color: red;
-  text-decoration: none;
 }
 
 #port {
@@ -716,7 +714,7 @@ body {
   }
   .nav-elements-mobile {
     display: flex;
-    margin-left: 50%;
+    float: right;
   }
 
   .greeting {
@@ -760,6 +758,7 @@ body {
   }
 
   #aboutMe {
+    margin-left: -1rem;
     margin-top: -3rem;
   }
 
@@ -774,33 +773,35 @@ body {
   }
 
   #aboutPic {
+    margin-left: -1rem;
     width: 20rem;
   }
 
   .skillheader {
     display: flex;
-    margin-left: -3rem;
+    margin-left: -4rem;
     justify-content: center;
   }
 
   .skillbars {
+    margin-left: -1rem;
     width: 20rem;
   }
 
   .skills-paragraph {
-    width: 24rem;
+    width: 20rem;
   }
 
   .storyheader {
     margin-top: -2rem;
-    margin-left: -10rem;
+    margin-left: -11rem;
     display: flex;
     justify-content: center;
   }
 
   #geologypic {
     width: 20rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
   }
   .mystory {
     display: flex;
@@ -812,12 +813,11 @@ body {
     margin-top: -1rem;
     margin-left: 2rem;
     max-width: 20rem;
-    margin-left: 4rem;
     font-size: 12pt;
   }
 
   .story-extend {
-    margin-left: 20rem;
+    margin-left: 19rem;
     font-size: 12pt;
     width: 20rem;
   }
@@ -830,7 +830,11 @@ body {
   }
 
   #header-portfolio {
+    margin-left: -1rem;
     font-size: 25pt;
+  }
+  .portfolio-intro {
+    margin-left: -1rem;
   }
 
   .portfolio-container {
@@ -846,6 +850,9 @@ body {
     margin: auto;
   }
 
+  #header-contact {
+    margin-left: -1rem;
+  }
   .contact-desc {
     font-size: 14pt;
   }
@@ -857,6 +864,7 @@ body {
   }
 
   .contact-form {
+    margin-left: -1rem;
     width: 15rem;
   }
 
@@ -865,5 +873,9 @@ body {
   }
   #message-area {
     min-width: 15rem;
+  }
+
+  #footer {
+    font-size: 7pt;
   }
 }
