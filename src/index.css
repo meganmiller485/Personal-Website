@@ -666,7 +666,7 @@ body {
   color: #2c666e;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 32rem;
+  margin-right: 27rem;
   margin-top: 2rem;
   float: right;
   display: none;
@@ -719,25 +719,20 @@ body {
     margin-left: 50%;
   }
 
-  /* .greeting {
-    margin-left: -6rem;
+  .greeting {
     font-size: 18pt;
   }
 
   .star {
-    font-size: 30pt;
-    margin-left: -4rem;
-  }
-
-  .typewriter {
-    margin-left: -3rem;
+    font-size: 52pt;
+    margin-left: -2rem;
   }
 
   #idpic {
-    margin-left: -6rem;
-    width: 12rem;
-    height: 12rem;
-  } */
+    margin-left: -1rem;
+    width: 14rem;
+    height: 14rem;
+  }
   #CONTACT {
     color: #2c666e;
   }
@@ -764,14 +759,27 @@ body {
     align-items: center;
   }
 
+  #aboutMe {
+    margin-top: -3rem;
+  }
+
+  .lillilabout {
+    width: 20rem;
+  }
+
   .aboutcontent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  #aboutPic {
+    width: 20rem;
+  }
+
   .skillheader {
     display: flex;
+    margin-left: -3rem;
     justify-content: center;
   }
 
@@ -784,24 +792,34 @@ body {
   }
 
   .storyheader {
+    margin-top: -2rem;
+    margin-left: -10rem;
     display: flex;
     justify-content: center;
   }
+
+  #geologypic {
+    width: 20rem;
+    margin-left: -1rem;
+  }
   .mystory {
     display: flex;
-
     justify-content: center;
     flex-direction: column;
   }
 
   .top-paragraph {
+    margin-top: -1rem;
     margin-left: 2rem;
-    max-width: 24rem;
+    max-width: 20rem;
+    margin-left: 4rem;
+    font-size: 12pt;
   }
 
   .story-extend {
-    margin-left: 17rem;
-    width: 24rem;
+    margin-left: 20rem;
+    font-size: 12pt;
+    width: 20rem;
   }
 
   .contact-container {
@@ -809,6 +827,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  #header-portfolio {
+    font-size: 25pt;
   }
 
   .portfolio-container {
@@ -824,7 +846,24 @@ body {
     margin: auto;
   }
 
+  .contact-desc {
+    font-size: 14pt;
+  }
+
   #mayflower {
     margin: auto;
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .contact-form {
+    width: 15rem;
+  }
+
+  #input-area {
+    min-width: 15rem;
+  }
+  #message-area {
+    min-width: 15rem;
   }
 }
