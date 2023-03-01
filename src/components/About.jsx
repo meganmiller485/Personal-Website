@@ -17,7 +17,7 @@ const About = () => {
             with enthusiasm and grace. Though I specialize in{' '}
             <span id='java-word'>JavaScript</span> web development, I love
             exploring new technologies and implementing them into my projects.
-            When i'm not behing the screen, you can find me tromping around in
+            When i'm not behind the screen, you can find me tromping around in
             the mountains, snow or shine.{' '}
           </div>
         </span>
